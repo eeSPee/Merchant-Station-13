@@ -66,6 +66,7 @@
 	next_knowledge = list(/datum/eldritch_knowledge/spell/ashen_shift,/datum/eldritch_knowledge/flesh_ghoul)
 	required_atoms = list(/obj/item/organ/eyes,/obj/item/shard)
 	result_atoms = list(/obj/item/clothing/neck/eldritch_amulet)
+	give_freebies = TRUE
 
 /datum/eldritch_knowledge/ash_mark
 	name = "Mark of Ash"
@@ -100,6 +101,7 @@
 		/datum/eldritch_knowledge/curse/paralysis
 	)
 	route = PATH_ASH
+	give_freebies = TRUE
 
 /datum/eldritch_knowledge/spell/flame_birth
 	name = "Flame Birth"

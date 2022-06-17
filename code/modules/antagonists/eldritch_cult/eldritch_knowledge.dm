@@ -23,6 +23,8 @@
 	var/list/required_atoms = list()
 	///What do we get out of this
 	var/list/result_atoms = list()
+	///Creates free atoms when the tech is researched
+	var/give_freebies = FALSE
 	///What path is this on defaults to "Side"
 	var/route = PATH_SIDE
 
@@ -40,6 +42,9 @@
  */
 /datum/eldritch_knowledge/proc/on_gain(mob/user)
 	to_chat(user, span_warning("[gain_text]"))
+	if (give_freebies)
+		for(var/result in result_atoms)
+			new result(loc)
 	return
 /**
  * What happens when you loose this

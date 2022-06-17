@@ -143,6 +143,7 @@
 	next_knowledge = list(/datum/eldritch_knowledge/rust_regen,/datum/eldritch_knowledge/cold_snap)
 	required_atoms = list(/obj/structure/table,/obj/item/clothing/mask/gas)
 	result_atoms = list(/obj/item/clothing/suit/hooded/cultrobes/eldritch)
+	give_freebies = TRUE
 
 /datum/eldritch_knowledge/essence
 	name = "Priest's Ritual"
@@ -152,6 +153,7 @@
 	next_knowledge = list(/datum/eldritch_knowledge/rust_regen,/datum/eldritch_knowledge/spell/ashen_shift)
 	required_atoms = list(/obj/structure/reagent_dispensers/watertank,/obj/item/shard)
 	result_atoms = list(/obj/item/reagent_containers/glass/beaker/eldritch)
+	give_freebies = TRUE
 
 /datum/eldritch_knowledge/final/rust_final
 	name = "Rustbringer's Oath"
